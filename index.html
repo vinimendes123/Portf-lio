@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="shortcut icon" type="imagex/png" href="challenge.png">
+    <title> Portfólio </title>
+</head>
+
+<body>
+    <header>
+        <h1>PORTFÓLIO </h1>
+        <h2>Vinícius Marçal Mendes</h2>
+    </header>
+
+    <div class="menu">
+        <button onclick="scrollToSection('quem-sou')">Quem sou?</button>
+        <button onclick="scrollToSection('projetos')">Projetos</button>
+    </div>
+
+    <div id="quem-sou" class="main"> 
+        <img src="eu.jpg" alt="Vinicius Imagem" width="300" height="263">
+        <div class="text-content">
+            <h3>Quem é Vinícius Marçal?</h3>
+            <p>Sou um estudante no 4º período de Engenharia de Software no Centro Universitário Filadélfia, em Londrina-PR,
+                atualmente atuando como técnico de implantação de sistemas no Hospital do Câncer de Londrina. Tenho 22 anos
+                e sou natural de Londrina, atualmente estou estudando javascript, java, html e css.</p>
+        </div>
+    </div>
+
+    <div id="projetos" class="separador"> 
+        <h3>PROJETOS</h3>
+    </div>
+	
+	<a href="http://64.181.190.222:3000/" class="project-link">
+    <div class="projeto1">
+        <div class="text-content">
+            <h3>UniSalas</h3>
+            <p>Aplicativo desenvolvido com foco em ajudar o processo de ensalamento nas faculdades, este aplicativo faz com que os professores e coordenadores façam o cadastro dos horários 
+               e os alunos vejam as alterações imediatamente ao acessarem o app.</p>
+        </div>
+			<img src="usl.jpg" alt="Imagem do Projeto UniSalas" class="project-image" width="300" height="263">
+    </div>
+	</a>
+	
+	 <a href="https://docs.google.com/document/d/1GkLkVkwajB2e7IfD1xTp6e5b7oulxgUP5D5fYBMTjUE/edit#heading=h.gjdgxs">
+    <div class="projeto2">
+        <img src="taça.jpg" alt="Imagem do Projeto 2" width="300" height="263">
+        <div class="text-content">
+            <h3>BD Copa do Mundo</h3>
+            <p>Neste projeto, foi projetado um banco de dados completo que poderia ser utilizado para a copa do mundo FIFA. Além disso foram feitas
+			varias validações com comandos sql em interações das tabelas.</p>
+        </div>
+    </div>
+	</a>
+
+	<a href="https://pt.overleaf.com/project/66280e93da8c41bb47075abe">
+    <div class="projeto3">
+        <div class="text-content">
+            <h3>Hospital Municipal</h3>
+            <p>Projeto realizado com foco em desenvolver toda a arquitetura de um sistema voltado para saúde, pensando em um sistema de gestão hospitalar, com várias integrações e interações.</p>
+        </div>
+        <img src="hml.jpg" alt="Imagem do Projeto 2" width="300" height="263">
+    </div>
+	</a>
+
+	<a href="https://www.youtube.com/watch?v=sY6Gh35zTAo">
+    <div class="projeto4">
+        <img src="omega.jpg" alt="Imagem do Projeto 2" width="300" height="263">
+        <div class="text-content">
+            <h3>Omega Med</h3>
+            <p>Projeto idealizado para desenvolvimento de um aplicativo focado na telemedicina, utilizando IA para ajudar em diagnósticos rápidos e direcionamentos para especialidades.</p>
+        </div>
+    </div>
+	</a>
+
+	<a href="https://github.com/Gabriel-satin/Gestao-de-Pessoas">
+    <div class="projeto5">
+        <div class="text-content">
+            <h3>Java com Spring Boot</h3>
+            <p>Neste projeto desenvolvi implementações utilizando framework Spring, aprimorando meu conhecimento sobre a linguagem e também sobre a arquitetura do código, foi desenvolvido um processo de cadastro. Plataformas utilizadas foram o intelij e o postman.</p>
+        </div>
+        <img src="Spring.png" alt="Imagem do Projeto 2" width="300" height="263">
+    </div>
+	</a>
+
+    <footer>
+        <p>Links de todos os projetos:</p>
+
+        <div class="imagens">
+            <a href="https://murillodaigder.wixsite.com/unisalas">
+                <img src="usl.jpg" alt="UniSalas" width="50" height="50">
+            </a>
+            <a href="https://docs.google.com/document/d/1GkLkVkwajB2e7IfD1xTp6e5b7oulxgUP5D5fYBMTjUE/edit#heading=h.gjdgxs">
+                <img src="taça.jpg" alt="World Cup" width="50" height="50">
+            </a>
+            <a href="https://pt.overleaf.com/project/66280e93da8c41bb47075abe">
+                <img src="hml.jpg" alt="Hospital Municipal" width="50" height="50">
+            </a>
+            <a href="https://www.youtube.com/watch?v=sY6Gh35zTAo">
+                <img src="omega.jpg" alt="Ômega Med" width="50" height="50">
+            </a>
+            <a href="https://github.com/Gabriel-satin/Gestao-de-Pessoas">
+                <img src="Spring.png" alt="Ômega Med" width="50" height="50">
+            </a>
+        </div>
+		
+		 <p>Links para minhas redes:</p>
+		 
+		 <div class= "redes">
+		 <a href="https://www.linkedin.com/in/viniciusmarcal123/">
+		 <img src="download.png" alt="linkedin" width="50" height="50">
+		 </a>
+		  <a href="https://github.com/vinimendes123">
+		 <img src="git.png" alt="linkedin" width="50" height="50">
+		 </a>
+		 </div>
+		 
+		 <div class= "dir">
+		 <p> Todos os direitos á Vinícius Marçal Mendes</p>
+		  </div>
+		  
+    </footer>
+
+    <script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    }
+    </script>
+</body>
+
+</html>
